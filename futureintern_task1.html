@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="task1_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        
+        <input type="text" id="temperatureInput" placeholder="Enter temperature" required>
+        
+        <div>
+            <label>
+                <input type="radio" name="unit" value="celsius" checked> Celsius
+            </label>
+            <label>
+                <input type="radio" name="unit" value="fahrenheit"> Fahrenheit
+            </label>
+            <label>
+                <input type="radio" name="unit" value="kelvin"> Kelvin
+            </label>
+        </div>
+        
+        <button onclick="convertTemperature()">Convert</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script src="task1_script.js"></script>
+</body>
+</html>
